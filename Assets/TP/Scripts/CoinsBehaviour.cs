@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CoinsBehaviour : MonoBehaviour
 {
+    public int nbrPoints = 1;
+
     AudioSource aud;
 
     public GameObject worldObject;
@@ -17,7 +19,7 @@ public class CoinsBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        worldObject.SendMessage("AddCoin");
+        worldObject.SendMessage("AddCoin", nbrPoints);
 
         Renderer objRenderer;
         Collider objCollider;

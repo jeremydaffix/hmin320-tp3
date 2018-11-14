@@ -17,10 +17,11 @@ public class StargateBehaviour : MonoBehaviour {
 	}
 
 
-    public string levelToLoad= "TP2BoxBoy" ;
+    public string levelToLoad= "TP3BoxBoy" ;
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(levelToLoad) ;
+        if(GameVariables.coins > 2) // score minimum avant de voyager !
+            SceneManager.LoadScene(levelToLoad) ;
     }
 
 }

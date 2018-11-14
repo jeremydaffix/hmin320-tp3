@@ -9,7 +9,7 @@ public class WorldBehaviour : MonoBehaviour
     public Text CoinsText;
     public GameObject CanvasObj;
 
-    int coins = 0;
+    //int coins = 0;
 
 
     //Transform child;
@@ -18,11 +18,19 @@ public class WorldBehaviour : MonoBehaviour
     {
         //canvasObj = GameObject.Find("Canvas");
         //child = CanvasObj.transform.Find("lblCoins"); //le nom de votre objet UI Text coinsText = child.GetComponent<Text>();
+
+        GameVariables.coins = 0;
     }
 
-    public void AddCoin()
+    public void AddCoin(int nbrPoints)
     {
-        coins++;
-        CoinsText.text = "$" + coins.ToString("00");
+        GameVariables.coins += nbrPoints;
+
+        if (GameVariables.coins < 0) GameVariables.coins = 0;
+
+        if(GameVariables.coins >= 4)
+            CoinsText.text = "YOU WIN! :o";
+        else
+            CoinsText.text = "$" + GameVariables.coins.ToString("00");
     }
 }
