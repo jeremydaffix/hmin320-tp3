@@ -547,8 +547,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 608715651}
-  m_LocalRotation: {x: 0.03160826, y: 0.96266097, z: 0.23589525, w: -0.12898926}
-  m_LocalPosition: {x: 180.4735, y: -10.954736, z: 379.9099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.14, z: -9.500059}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5224,7 +5224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4ea9bc3e26b4c19bf49f781d6b8ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: TP2BoxBoy
+  levelToLoad: TP3BoxBoy
 --- !u!4 &816718417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417748, guid: 8142860b8f89a564faf152e3c8b743e7,
